@@ -1,11 +1,21 @@
 import {createRoot} from "react-dom/client";
 
-import "./component-test-index.less";
+import classes from "./component-test-index.module.less";
 
 function ComponentTestIndex():JSX.Element
 {
   return <>
-    hello
+    <div className={classes["something"]}>
+      hello
+
+      <div className={classes["something2"]}>
+        thing
+      </div>
+    </div>
+
+    <div className={classes["something2-bruh"]}>
+      hello2
+    </div>
   </>;
 }
 

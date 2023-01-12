@@ -31,6 +31,7 @@ export default defineConfig({
 
     build:{
         outDir:`${__dirname}/build`,
-        target:["esnext"]
+        target:["esnext"],
+        emptyOutDir:true
     }
 });
